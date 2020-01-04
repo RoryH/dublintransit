@@ -1,0 +1,89 @@
+.label {
+	display: inline-block;
+	font-family: monospace;
+	font-size: 0.8em;
+	padding: 2px 4px;
+}
+
+.label-info {
+	color: #fff;
+	background-color: rgb(33, 150, 243);
+}
+
+#waiter {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	display: table-cell;
+}
+
+#waiter .msg {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #fff;
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	animation-name: text-color;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.bus-times .bus-stop {
+	border-top: solid 1px #eee;
+	padding-top: 15px;
+}
+
+.bus-times .remove {
+	margin-bottom: 15px;
+	text-align: right;
+}
+
+.luas-info td {
+	text-align: center;
+	color: #3e3e3e;
+}
+
+.luas-info tr td:nth-child(2) {
+	border-right: solid 2px rgba(0,0,0,.12);
+}
+
+.luas-info tr:nth-child(2n+0), .bus-times tr:nth-child(2n+0) {
+	background-color: #f3f3f3;
+}
+.add-bus > div, .bus-route-txt {
+	width: 50%;
+}
+
+@keyframes text-color {
+	0% {color: white;}
+	70% { color: white; }
+	100% {color: #555;}
+}
+
+.route-entry {
+	position: relative;
+}
+
+.route-entry .remove {
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+.route-entry .remove button {
+	padding: 0;
+	width: 36px;
+	height: 36px;
+	margin: 0;
+	box-shadow: 0 0 10px 10px #fff;
+}
+
+.error {
+	color: #ff5533;
+}

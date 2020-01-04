@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Dublin Transit - Dublin Bus, Luas</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Easy &amp; Fast Luas/Bus times for nearest stop in Dublin" />
+		<meta name="author" content="Rory Haddon" />
+		<link rel="manifest" href="manifest.json" />
+		<meta name="theme-color" content="#2196F3" />
+		<link href="//cdn.muicss.com/mui-0.2.9/css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link href="transport-mui.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<header id="header" class="mui-appbar mui--appbar-height mui--appbar-line-height mui--text-center">
+			<a class="mui--text-headline mui--text-white" href="#">Dublin Transit</a>
+		</header>
+		<div class="mui-container">
+
+			<div>
+				<h1 id="stationName" class="luas-station-name row"></h1>
+				<div id="luasInfo" class="luas-info row"></div>
+				<div id="busTimes" class="bus-times row"></div>
+				<div class="add-bus row form-inline mui-panel">
+					<div class="mui--pull-left">
+						<label for="addBus_txt" class="mui--text-subhead">Add Bus Route</label><br />
+						<input type="text" class="mui--text-headline bus-route-txt" id="addBus_txt" placeholder="Bus #" />
+					</div>
+					<button id="addBus" class="mui--pull-right mui-btn mui-btn--fab mui-btn--primary">+</button>
+				</div>
+
+			</div> <!-- /container -->
+		</div>
+
+		<script src="https://cdn.muicss.com/mui-0.2.9/js/mui.min.js"></script>
+		<script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous"></script>
+		<script src="dist/transportbs.js"></script>
+
+	</body>
+
+</html>
